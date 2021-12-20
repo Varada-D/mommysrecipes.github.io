@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+        	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	        <title>Mommy's Recipes | Specialities</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="icon" href="images/logo.jpg" sizes="16x16" type="image/png"> 
+		<link rel="stylesheet" href="css/Style.css">
+	        <link rel="stylesheet" href="css/Specialities.css">
+	</head>
+
+	<body>
+		<section id="bg">
+			<header>
+				<img src="images/logo.jpg" id="logo" alt="Logo"/>
+				<nav class="topnav" id="navbar">
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a><br class="navbr"><br class="navbr">
+					<a href="Contact.html" tabindex="5">Contact Us</a>
+					<a href="OurChefs.html" tabindex="4">Our Chefs</a>
+					<a href="#" id="active" tabindex="3">Specialities</a>
+					<a href="AboutUs.html" tabindex="2">About Us</a>
+					<a href="index.html" tabindex="1">Home</a>
+				</nav>
+			</header>
+			<section id="main">
+		        	<div id="IC" class="Category">
+					<h1>Indian Cuisine</h1>
+					<button id ="ICbtn" class="ShowHideBtn" onclick="Show_Hide('ICM', 'ICbtn')">Show Menu</button><br>
+					<div id="ICM" class="Menu">
+						<p>Dive into the taste of exotic Indian food with this collection of authentic Indian recipes! Get your taste buds ready for diverse spices and flavours. We offer recipes for various types of Indian dals (pulses), rice, rotis (the indian bread) and much more... So what are you waiting for? Your desired recipe is just a few clicks away!</p>
+		                		<a class="MenuItem" data-bs-toggle="modal" data-bs-target="#Roti">Roti</a><!-- Trigger Modal -->
+						<!-- Modal -->
+							<div class="modal fade" id="Roti" tabindex="-1" role="dialog" aria-labelledby="Roti">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h2 class="modal-title">Roti (Indian Bread)</h2>
+											<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<p>Roti is a staple food in the northern parts of India. There is a wide varity in terms of the preparation of roti. Here are a few recipes that we are sure you'll love!</p>
+											<ul>
+												<li><a href="TandooriRoti.html" target="_blank">Tandoori Roti</a></li>
+												<li><a href="ComingSoon.html" target="_blank">Rumali Roti</a></li>
+												<li><a href="ComingSoon.html" target="_blank">Makke di (Corn Flour) Roti</a></li>
+												<li><a href="ComingSoon.html" target="_blank">Bajra ni Roti</a></li>
+												<li><a href="ComingSoon.html" target="_blank">Puri</a></li>
+												<li><a href="ComingSoon.html" target="_blank">Phulka</a></li>
+											</ul>
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+										</div>
+									</div>
+								</div>
+							</div>
+			                	<a href="ComingSoon.html" target="_blank">Sabzi</a>
+				                <a href="ComingSoon.html" target="_blank">Dal</a>
+				                <a href="ComingSoon.html" target="_blank">Chawal</a>
+					</div>
+				</div>
+
+				<div id="CC" class="Category">
+					<h1>Chinese Cuisine</h1>
+					<button id="CCbtn" class="ShowHideBtn" onclick="Show_Hide('CCM', 'CCbtn')">Show Menu</button><br>
+					<div id="CCM" class="Menu">
+						<p>China is known for the noodles and manchurian that its people have to offer. Want to try out preparing Chinese food at home? Worry not, Mommy's recipes to the rescue! We offer recipes for a variety of Chinese food like noodles, manchurian, momos and much more. Don't worry, your desired recipe is easy to prepare, and just a few clicks away!</p>
+						<a href="ComingSoon.html" target="_blank">Hakka Noodles</a>
+			                	<a href="ComingSoon.html" target="_blank">Manchurian</a>
+				                <a href="ComingSoon.html" target="_blank">Schezwan Fried Rice</a>
+					</div>
+				</div>
+
+				<div id="ItC" class="Category">
+					<h1>Italian Cuisine</h1>
+					<button id="ItCbtn" class="ShowHideBtn" onclick="Show_Hide('ItCM', 'ItCbtn')">Show Menu</button><br>
+					<div id="ItCM" class="Menu">
+						<p>Italian food is something we often crave for. The specialities? Of course the pizza and pasta! Here is a collection of the delicious varieties of Italian recipes. So what are you waiting for? Just a few clicks, and boom! You are ready to prepare a delicious home-cooked Italian meal!</p>
+						<a href="ComingSoon.html" target="_blank">Pizza</a>
+			                	<a href="ComingSoon.html" target="_blank">White Sauce Pasta</a>
+				                <a href="ComingSoon.html" target="_blank">Red Sauce Pasta</a>
+					</div>
+				</div>
+
+				<div id="MC" class="Category">
+					<h1>Mexican Cuisine</h1>
+					<button id="MCbtn" class="ShowHideBtn" onclick="Show_Hide('MCM', 'MCbtn')">Show Menu</button><br>
+					<div id="MCM" class="Menu">
+						<p>Mexican Cuisine is among one of the known cuisines across the world, most famous for their Nachos, Tacos and Burritos. Ever tried preparing Mexican dishes at home? Or craved for, but weren't sure where to find them? Well your search is over, and your desired recipe, just a few clicks away! So why move around searching for it? Here is the entire collection!</p>
+						<a href="ComingSoon.html" target="_blank">Pizza</a>
+			                	<a href="ComingSoon.html" target="_blank">White Sauce Pasta</a>
+				                <a href="ComingSoon.html" target="_blank">Red Sauce Pasta</a>
+					</div>
+				</div>
+
+				<div id="STC" class="Category">
+					<h1>Sweet Tooth Corner</h1>
+					<button id="STCbtn" class="ShowHideBtn" onclick="Show_Hide('STCM', 'STCbtn')">Show Menu</button><br>
+					<div id="STCM" class="Menu">
+						<p>Sweet cravings are so common among us! For many, meals seem to be incomplete without activating the "sweet" taste buds. So here we provide some mouth-watering sweet dishes. Just a few clicks, and you are ready to go!</p>
+						<a href="ComingSoon.html" target="_blank">Indian "Malai" Sweets</a>
+			                	<a href="ComingSoon.html" target="_blank">Sundaes</a>
+					</div>
+				</div>
+
+				<div id="BP" class="Category">
+					<h1>Baker's Point</h1>
+					<button id="BPbtn" class="ShowHideBtn" onclick="Show_Hide('BPM', 'BPbtn')">Show Menu</button><br>
+					<div id="BPM" class="Menu">
+						<p>There are quite a few recipes that are incomplete without the use of bakery products, nd we often turn to bakery stores for the same. However, have you ever wondered how easy it is to prepare these items at home? If not, worry not! We provide you with a collection of easy-to-prepare delecious bakery items at your finger-tips. Hurry up, you are just a few clicks away!</p>
+						<a href="ComingSoon.html" target="_blank">Bread</a>
+			                	<a href="ComingSoon.html" target="_blank">Cake</a>
+				                <a href="ComingSoon.html" target="_blank">Biscuits and Cookies</a>
+					</div>
+				</div>
+
+				<div id="B" class="Category">
+					<h1>Bevarages</h1>
+					<button id="Bbtn" class="ShowHideBtn" onclick="Show_Hide('BM', 'Bbtn')">Show Menu</button><br>
+					<div id="BM" class="Menu">
+						<p>Our day is almost never complete without the consumption of bevarages - hot or cold. At times, we may get bored with the same recipes. So why not explore and try new recipes? Just a few clicks away from you, is a collection of a few bevarages that we are sure you'll love. No need to search any further!</p>
+						<a href="ComingSoon.html" target="_blank">Hot</a>
+			                	<a href="ComingSoon.html" target="_blank">Cold</a>
+			                	<a href="ComingSoon.html" target="_blank">Soda</a>
+					</div>
+				</div>
+
+				<div id="TT" class="Category">
+					<h1>Tricky Treats</h1>
+					<button id="TTbtn" class="ShowHideBtn" onclick="Show_Hide('TTM', 'TTbtn')">Show Menu</button><br>
+					<div id="TTM" class="Menu">
+						<p>It is a well-known fact how difficult it becomes when it comes to making your child eat healty. But moms always have their ways to to so. With inputs from our lovely mothers, we have compiled an amazing collection of healthy recipes that your kids are going to love. So why the wait? Your tricky treat recipe would be ready in just a few clicks!</p>
+						<a href="ComingSoon.html" target="_blank">Eatables</a>
+			                	<a href="ComingSoon.html" target="_blank">Drinkables</a>
+					</div>
+				</div>
+
+				<div id="TB" class="Category">
+					<h1>Tiny Bites</h1>
+					<button id="TBbtn" class="ShowHideBtn" onclick="Show_Hide('TBM', 'TBbtn')">Show Menu</button><br>
+					<div id="TBM" class="Menu">
+						<p>Hurray! It's snack time. Ever felt hungry but didn't know what to make? That won't be a problem any longer! Welcome to tiny bites, the delicious snacks for mid-day cravings! Hurry, you are just a few clicks away from mouth-watering taste-bud-soothing snack recipes!</p>
+						<a href="ComingSoon.html" target="_blank">Baked</a>
+			                	<a href="ComingSoon.html" target="_blank">Fried</a>
+			                	<a href="ComingSoon.html" target="_blank">Boiled</a>
+					</div>
+				</div>
+
+				<div id="NC" class="Category">
+					<h1>No Cook</h1>
+					<button id="NCbtn" class="ShowHideBtn" onclick="Show_Hide('NCM', 'NCbtn')">Show Menu</button><br>
+					<div id="NCM" class="Menu">
+						<p>Cooking on the stove sometimes seems like a tedious process. Have you ever tried or though of no-cook foods? Don't worry if you haven't, we got you covered! Your no-cook recipe would be ready in just a few clicks!</p>
+						<a href="ComingSoon.html" target="_blank">Eatables</a>
+			                	<a href="ComingSoon.html" target="_blank">Drinkables</a>
+					</div>
+				</div>
+
+				<div id="TTw" class="Category">
+					<h1>Tongue Twisters</h1>
+					<button id="TTwbtn" class="ShowHideBtn" onclick="Show_Hide('TTwM', 'TTwbtn')">Show Menu</button><br>
+					<div id="TTwM" class="Menu">
+						<p>You must have heard about the game of tongue twisters. But how about "Tongue Twisting" food? It's nothing but a mix of flavours that is sure to give a "twist" to your taste buds. Wanna try out? Here! Your tongue-twisting recipe would be ready in just a few clicks!</p>
+						<a href="ComingSoon.html" target="_blank">Eatables</a>
+			                	<a href="ComingSoon.html" target="_blank">Drinkables</a>
+					</div>
+				</div>
+			</section>
+		</section>
+
+
+		<footer>
+			<div>
+				<span>Made with 💖</span>
+				<div>
+					<i class="fa fa-facebook-square fa-custom1 fa-2x"></i>
+					<i class="fa fa-youtube-square fa-custom2 fa-2x"></i>
+					<i class="fa fa-twitter-square fa-custom3 fa-2x"></i>
+					<i class="fa fa-instagram fa-custom4 fa-2x"></i>
+					<i class="fa fa-envelope fa-custom5 fa-2x"></i>
+					<i class="fa fa-pinterest-square fa-custom6 fa-2x"></i>
+					<i class="fa fa-linkedin-square fa-custom7 fa-2x"></i>
+				</div>
+				<span>&copy; Mommy's Recipes</span>
+			</div>
+		</footer>
+
+
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+		<script src="js/nav.js"></script>
+	        <script src="js/Specialities.js"></script>
+	</body>
+</html>

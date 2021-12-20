@@ -1,0 +1,270 @@
+
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden; /* Hide horizontal scrollbar */
+	overflow-y: scroll; /* Add vertical scrollbar */
+}
+
+body {
+	padding: 0;
+	margin: 10px;
+	text-align: center;
+	font-family: "Times New Roman";
+}
+
+
+#bg {
+	background: url('../images/bg2.jpg') center;
+	height: auto;
+	min-height: 97vh;
+	text-align: center;
+	font-size: 4vw;
+	z-index: 1;
+	background-attachment: fixed;
+	padding-bottom: 10vh;
+}
+
+#main {
+	background-color: rgba(0,0,0,0);
+	width: 97vw;
+	margin: auto;
+	border-radius: 0;
+	padding: 0;
+	line-height: 2px;
+}
+
+#IC {
+	background: url('../images/IC.jpg') no-repeat center;
+	background-size: cover;
+}
+
+#CC {
+	background: url('../images/CC.jpeg') no-repeat center;
+	background-size: cover;
+}
+
+#ItC {
+	background: url('../images/ItC.jpg') no-repeat center;
+	background-size: cover;
+}
+
+#MC {
+	background: url('../images/MC.jpg') no-repeat center;
+	background-size: cover;
+}
+
+
+#STC {
+	background: url('../images/STC.jpg') no-repeat center;
+	background-size: cover;
+}
+
+#BP {
+	background: url('../images/BP.jpg') no-repeat center;
+	background-size: cover;
+}
+
+#TT {
+	background: url('../images/TT.jpg') no-repeat center;
+	background-size: cover;
+}
+
+#NC {
+	background: url('../images/NC.jpg') no-repeat center;
+	background-size: cover;
+}
+
+#B {
+	background: url('../images/B.jpg') no-repeat center;
+	background-size: cover;
+}
+
+
+#TTw {
+	background: url('../images/TTw.jpg') no-repeat center;
+	background-size: cover;
+}
+
+
+#TB {
+	background: url('../images/TB.jpg') no-repeat center;
+	background-size: cover;
+}
+
+
+.Category {
+	min-height: 20vh;
+	height: auto;
+	width: 70vw;
+	margin: 0 auto;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	margin-top: 5vh;
+}
+
+.ShowHideBtn {
+	padding: 2%;
+	font-weight: bold;
+	background-color: rgba(0,0,0,0);
+	color: rgb(255,255,255);
+	min-width: 10vw;
+	margin: auto;
+	border: 1px solid rgb(255,255,255);
+	font-size: 40%;
+}
+
+.ShowHideBtn:hover {
+	background-color: rgba(255,255,255,0.1);
+	cursor: pointer;
+	font-size: 50%;
+}
+
+.Menu {
+	display: none;
+	position: relative;
+	margin-top: 5vh;
+}
+
+.MenuItem, div a {
+	font-size: 40%;
+	text-decoration: none;
+	color: rgb(255,255,255);
+	padding: 1%;
+	line-height: 6.5vh;
+	border: 1px solid rgb(255,255,255);
+}
+
+.MenuItem:hover, div a:hover {
+	background-color: rgba(255,255,255,0.1);
+	color: rgb(255,255,255);
+	cursor: pointer;
+	font-size: 50%;
+}
+
+h1 {
+	font-size: 100%;
+	color: rgb(255,255,255);
+}
+
+div p {
+	font-size: 40%;
+	line-height: 6.5vh;
+	color: rgb(255,255,255);
+	padding: 0 2.5vh;
+}
+
+.modal {
+	font-size: 40%;
+	line-height: 6.5vh;
+}
+
+.modal-dialog {
+	border: 5px solid rgb(255,255,255);
+	border-radius: 5%;
+}
+
+.modal-content {
+	border-radius: 5%;
+}
+
+.modal-header {
+	color: rgb(255,255,255);
+	font-weight: 900;
+}
+
+.modal-backdrop {
+   backdrop-filter: blur(5px);
+   background-color: #01223770;
+}
+
+.modal-backdrop.in {
+   opacity: 1 !important;
+}
+
+.modal-content {
+	background: url('../images/Roti.jpg') no-repeat center;
+	background-size: cover;
+}
+
+.modal-content-backdrop.in {
+   opacity: 1 !important;
+}
+
+.modal-body {
+	background-color: rgba(0,0,0,0.5);
+}
+
+button.close {
+	background-color: rgba(0,0,0,0);
+	color: rgb(255,255,255);
+	border: none;
+	font-size: 150%;
+}
+
+button.close:hover {
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 50%;
+}
+
+.modal-title {
+	font-size: 120%;
+}
+
+.modal-body p, .modal-body a, .modal-body ul {
+	text-align: justify;
+	color: rgb(255,255,255);
+	font-size: 90%;
+}
+
+.modal-body a {
+	border: none;
+}
+
+.modal-body a:hover {
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 25%;
+	font-size: 90%;
+	font-weight: bold;
+}
+
+.modal-footer button {
+	background-color: rgba(0,0,0,0.5);
+}
+
+.modal-footer button:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+footer span:first-child {
+	margin-left: 0;
+}
+
+
+@media screen and (max-width:900px) {
+		.Category {
+			width: 80vw;
+			font-size: 120%;
+		}
+}
+
+
+@media screen and (max-width:700px) {
+		.Category {
+			width: 90vw;
+			font-size: 150%;
+		}
+		.Category p {
+			line-height: 5vh;
+		}
+}
+
+
+@media screen and (max-width:500px) {
+		.Category {
+			width: 90vw;
+			font-size: 200%;
+		}
+		.Category p {
+			line-height: 4vh;
+		}
+}

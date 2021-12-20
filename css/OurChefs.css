@@ -1,0 +1,208 @@
+body {
+	font-family: "Times New Roman";
+}
+
+
+header {
+	z-index: 400;
+}
+
+#bg {
+	background: url('../images/bg2.jpg');
+	background-attachment: fixed;
+	height: auto;
+	padding-bottom: 10vh;
+}
+
+
+#main {
+	line-height: 4vh;
+	border-radius: 0;
+	text-align: left;
+	padding: 5vh;
+	margin: 5vh auto;
+	background-color: rgba(0,0,0,0.9);
+	border-radius: 5px;
+	padding: 5vh;
+	width: 95%;
+	color: rgb(0,0,0);
+}
+
+
+#main>h1 {
+	color: rgb(255,255,255);
+	text-align: center;
+	margin-top: 10vh;
+	margin-bottom: 5vh;
+	font-size: 225%;
+	text-transform: upper-case;
+}
+
+#main>h1:first-child {
+	margin-top: 2.5vh;
+}
+
+div.HeadChef>div.card {
+	margin: 0 auto;
+	width: 25%;
+}
+
+
+div.chefs, div.card-body:last-child {
+	display: -webkit-flex;
+	display: flex;
+}
+
+
+div.break {
+	width: 50%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex: 1; /* Safari */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1; /* Standard syntax */
+}
+
+div.chefs>div.break, div.chefs>div.card, div.card-body:last-child>a {
+	-webkit-flex: 1; /* Safari */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1; /* Standard syntax */
+}
+
+
+div.chefs div.card {
+	margin: 0 1.5vh;
+	width: 50%;
+}
+
+
+@media screen and (max-width: 1000px) {
+	div.HeadChef>div.card {
+		width: 50%;
+	}
+	div.chefs {
+		display: block;
+		width: 100%;
+	}
+	div.break {
+		width: 100%;
+		margin: 2vh 0;
+		padding: 2.5vh 5vh;
+	}
+}
+
+
+
+@media screen and (max-width: 700px) {
+	#main {
+		width: 75%;
+	}
+	div.HeadChef>div.card {
+		width: 60%;
+	}
+	div.break {
+		display: block;
+		width: 100%;
+		padding: 0vh 5vh;
+	}
+	div.break>div.card {
+		width: 55%;
+		margin: 2.5vh auto;
+	}
+}
+
+
+
+@media screen and (max-width: 600px) {
+	#main {
+		width: 90%;
+	}
+}
+
+
+
+@media screen and (max-width: 500px) {
+	div.HeadChef>div.card {
+		width: 70%;
+	}
+	div.break>div.card {
+		width: 65%;
+	}
+}
+
+
+
+@media screen and (max-width: 450px) {
+	div.HeadChef>div.card {
+		width: 80%;
+	}
+	div.break>div.card {
+		width: 75%;
+	}
+}
+
+
+
+@media screen and (max-width: 400px) {
+	div.HeadChef>div.card {
+		width: 98%;
+	}
+	div.break>div.card {
+		width: 95%;
+	}
+}
+
+
+.card img {
+	width: 98%;
+	margin: 0 auto;
+	height: 60%;
+}
+
+
+.card-title {
+	text-align: center;
+	font-size: 190%;
+}
+
+
+.card-body {
+	color: rgb(0,0,0);
+	text-align: center;
+}
+
+.card-body:last-child {
+	display: -webkit-flex;
+	display: flex;
+}
+
+
+.card-body a {
+	-webkit-flex: 1; /* Safari */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1; /* Standard syntax */
+}
+
+
+.card-body a {
+	text-align: center;
+}
+
+
+.card-body .fa-custom7 {
+	color: rgb(0,119,181);
+}
+
+
+.card-body .fa-custom5 {
+	color: rgb(187,0,27);
+}
+
+
+.card-body .fa-custom7:hover, .card-body .fa-custom5:hover {
+	color: rgb(0,0,0);
+}
+
+.card-body p {
+	font-size: 120%;
+}

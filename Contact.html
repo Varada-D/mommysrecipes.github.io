@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Mommy's Recipes | Contact Us</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="icon" href="images/logo.jpg" sizes="16x16" type="image/png"> 
+		<link rel="stylesheet" href="css/Style.css">
+		<link rel="stylesheet" href="css/Contact.css">
+	</head>
+
+
+	<body>
+		<section id="bg">
+			<header>
+				<img src="images/logo.jpg" id="logo" alt="Logo"/>
+				<nav class="topnav" id="navbar">
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a><br class="navbr"><br class="navbr">
+					<a href="#" id="active" tabindex="5">Contact Us</a>
+					<a href="OurChefs.html" tabindex="4">Our Chefs</a>
+					<a href="Specialities.html" tabindex="3">Specialities</a>
+					<a href="AboutUs.html" tabindex="2">About Us</a>
+					<a href="index.html" tabindex="1">Home</a>
+				</nav>
+			</header>
+
+			<section id="main">
+				<h1>Mommy's Recipes</h1>
+				<p>Hello there! Thank you for stopping by @ Mommy's Recipes. Feel free to drop your feedback, suggestions, or any new recipes that you would like us to put up on our website. You can fill the form below, or contact us through E-mail or through any of our social media handles.</p>
+				<form method="POST">
+					<fieldset>
+						<legend><h2>Contact Form</h2></legend>
+ 						<label for="name">Name*</label>
+						<input type="text" id="name" name="name" placeholder="Your name.." required>
+						<label for="email">E-mail ID*</label>
+						<input type="email" id="email" name="E-mail" placeholder="Your E-mail ID.." required>
+						<label for="purpose">Purpose*</label>
+						<select id="purpose" name="purpose" required>
+							<option value="" disabled selected>Select an Option</option>
+							<option value="Feedback">Feedback</option>
+							<option value="Suggestion">Suggestion</option>
+							<option value="Add Recipe">Add Recipe</option>
+							<option value="Others">Others</option>
+						</select>
+						<label for="Message">Message*</label>
+						<textarea id="Message" name="Message" placeholder="Your Message.." required></textarea>
+						<label for="File">Select a file (optional): </label>
+						<input type="file" id="File" name="File">
+						<p>* marks the required fields.</p><br>
+       						<input type="submit" value="Submit">
+					</fieldset>
+				</form>
+			</section>	
+
+		</section>
+
+		<footer>
+			<div>
+				<span>Made with 💖</span>
+				<div>
+					<i class="fa fa-facebook-square fa-custom1 fa-2x"></i>
+					<i class="fa fa-youtube-square fa-custom2 fa-2x"></i>
+					<i class="fa fa-twitter-square fa-custom3 fa-2x"></i>
+					<i class="fa fa-instagram fa-custom4 fa-2x"></i>
+					<i class="fa fa-envelope fa-custom5 fa-2x"></i>
+					<i class="fa fa-pinterest-square fa-custom6 fa-2x"></i>
+					<i class="fa fa-linkedin-square fa-custom7 fa-2x"></i>
+				</div>
+				<span>&copy; Mommy's Recipes</span>
+			</div>
+		</footer>
+
+
+		<script src="js/nav.js"></script>
+	</body>
+</html>

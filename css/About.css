@@ -1,0 +1,202 @@
+*{
+  box-sizing: border-box;
+}
+
+
+#bg{
+	background: url("../images/bg2.jpg");
+	min-height: 97vh;
+	background-attachment: fixed;
+}
+
+
+header {
+	z-index: 400;
+}
+
+
+#main {
+	width: 100%;
+	background-color: rgba(0,0,0,0);
+	border-radius: 0;
+	margin-top: 15vh;
+	padding-bottom: 15vh;
+	margin-bottom: 0;
+}
+
+
+.counter-up {
+	background: url("../images/bg.jpg") no-repeat center;
+	min-height: 50vh;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 0 10vh;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+
+.counter-up::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.8);
+}
+
+
+div.content {
+	z-index: 1;
+	display: flex;
+	width: 100%;
+}
+
+
+
+div.break {
+	z-index: 1;
+	display: flex;
+	width: 50%;
+	-webkit-flex: 1; /* Safari */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1; /* Standard syntax */
+}
+
+
+
+div.box {
+	border: 1px dashed rgba(255,255,255,0.5);
+	border-radius: 5px;
+	-webkit-flex: 1; /* Safari */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1; /* Standard syntax */
+	width: 20%;
+	margin: 2vh;
+}
+
+
+
+div.icon, div.stat, div.text {
+	margin: 2vh auto;
+	text-align: center;
+	padding: 2vh;
+	line-height: 3.5vh;
+}
+
+
+div.stat {
+	display: flex;
+	margin: 4vh 0;
+	padding: 0 25%;
+}
+
+
+div.stat>div.counter, div.stat>i.fa-custom {
+	-webkit-flex: 1; /* Safari */
+	-ms-flex: 1; /* IE 10 */
+	flex: 1; /* Standard syntax */
+}
+
+.content .box .icon {
+	font-size: 48px;
+	color: rgb(255,255,255);
+}
+
+.content .box .counter {
+	font-size: 50px;
+	font-weight: 500;
+	color: rgba(238, 238, 0, 1);
+	font-family: sans-serif;
+}
+.content .box .text {
+	font-weight: 400;
+	color: rgb(255,255,255);
+	font-size: 120%;
+}
+
+
+
+.box {
+	line-height: 2.5vh;
+}
+
+
+
+.fa-custom {
+	font-size: 24px;
+}
+
+
+
+div.info {
+	margin: 15vh auto 0 auto;
+	background: url('../images/bg1.jpg') no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+div.info>div {
+	background-color: rgb(0,0,0,0.7);
+	padding: 5vh 10vh 10vh 10vh;
+}
+
+
+
+.info h1 {
+	color: rgb(255,255,255);
+	text-align: center;
+	margin: 10vh 0;
+}
+
+
+
+.info p {
+	line-height: 6.5vh;
+	font-size: 125%;
+	text-align: justify;
+}
+
+
+
+@media screen and (max-width: 900px) {
+	div.content {
+		display: block;
+		width: 100%;
+	}
+	div.break {
+		width: 100%;
+		margin: 2vh 0;
+		padding: 2.5vh 5vh;
+	}
+}
+
+
+@media screen and (max-width: 700px) {
+	div.stat {
+		padding: 0 15%;
+	}
+}
+
+
+@media screen and (max-width: 555px) {
+	div.stat {
+		padding: 0 30%;
+	}
+	div.break {
+		display: block;
+		width: 100%;
+		padding: 0;
+	}
+	div.box {
+		width: 100%;
+		margin: 5vh 0;
+		padding: 1vh 5vh;
+	}
+	div.info>div {
+		padding: 5vh 5vh 10vh 5vh;
+	}
+}
